@@ -48,6 +48,12 @@ Body:
     Commands:
       changedress: true
       resurrect: true
+      ### Modified ###
+      autoloot: true
+      alootid: true
+      aloottype: true
+      showexp: true
+      exp: true
     Permissions:
       # without this basic permissions regular players could not trade or party
       can_trade: true
