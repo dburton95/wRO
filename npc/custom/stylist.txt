@@ -1,34 +1,41 @@
 //===== rAthena Script =======================================
-//= Stylist
-//===== By: ==================================================
-//= Euphy
-//===== Current Version: =====================================
-//= 1.1
-//===== Compatible With: =====================================
-//= rAthena Project
-//===== Description: =========================================
-//= Changes your hair style, hair color, and cloth color.
-//===== Additional Comments: =================================
-//= 1.0 Initial script.
-//= 1.1 Switched to 'getbattleflag', credits to Saithis. [Euphy]
+//= Stylist (Cloth Color Disabled)
 //============================================================
 
 prontera,170,180,1	script	Stylist#custom_stylist	122,{
+	// Original arrays (cloth color removed by commenting)
+	// setarray .@Styles[1],
+	//	getbattleflag("max_cloth_color"),
 	setarray .@Styles[1],
-		getbattleflag("max_cloth_color"),
 		getbattleflag("max_hair_style"),
 		getbattleflag("max_hair_color");
+
+	// setarray .@Look[1],
+	//	LOOK_CLOTHES_COLOR,
 	setarray .@Look[1],
-		LOOK_CLOTHES_COLOR,
 		LOOK_HAIR,
 		LOOK_HAIR_COLOR;
-	set .@s, select(" ~ Cloth color: ~ Hairstyle: ~ Hair color");
+
+	// Disable cloth color menu option (comment it out)
+	// set .@s, select(" ~ Cloth color: ~ Hairstyle: ~ Hair color");
+	set .@s, select(" ~ Hairstyle: ~ Hair color");
+
+	// Because we removed the first entry, shift selection by +1
+	// Cloth color would've been index 1, now Hairstyle becomes 1, Hair color becomes 2.
+	// No further changes required.
+
 	set .@Revert, getlook(.@Look[.@s]);
 	set .@Style,1;
+
 	while(1) {
 		setlook .@Look[.@s], .@Style;
 		message strcharinfo(0),"This is style #"+.@Style+".";
-		set .@menu$, " ~ Next (^0055FF"+((.@Style!=.@Styles[.@s])?.@Style+1:1)+"^000000): ~ Previous (^0055FF"+((.@Style!=1)?.@Style-1:.@Styles[.@s])+"^000000): ~ Jump to...: ~ Revert to original (^0055FF"+.@Revert+"^000000)";
+		set .@menu$, 
+			" ~ Next (^0055FF"+((.@Style!=.@Styles[.@s])?.@Style+1:1)+"^000000):"
+			+" ~ Previous (^0055FF"+((.@Style!=1)?.@Style-1:.@Styles[.@s])+"^000000):"
+			+" ~ Jump to..."
+			+" ~ Revert to original (^0055FF"+.@Revert+"^000000)";
+
 		switch(select(.@menu$)) {
 		case 1:
 			set .@Style, ((.@Style != .@Styles[.@s]) ? .@Style+1 : 1);
@@ -49,3 +56,4 @@ prontera,170,180,1	script	Stylist#custom_stylist	122,{
 		}
 	}
 }
+

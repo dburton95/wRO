@@ -24,13 +24,13 @@ function Go; function Disp; function Pick; function Restrict;
 // --------------------------------------------------
 
 menu	"Last Warp ^777777["+lastwarp$+"]^000000",-,
-    	" ~ Towns",Towns,
-    	" ~ Fields",Fields,
-    	" ~ Dungeons",Dungeons,
-    	" ~ Guild Castles",Castles,
-    	" ~ Guild Dungeons",Guild_Dungeons,
-    	" ~ Instances",Instances,
-    	" ~ Special Areas",Special;
+    	" ~ Towns",Towns;
+    //	" ~ Fields",Fields,
+    //	" ~ Dungeons",Dungeons,
+    //	" ~ Guild Castles",Castles,
+    //	" ~ Guild Dungeons",Guild_Dungeons,
+  // 	" ~ Instances",Instances;
+    //	" ~ Special Areas",Special;
 
 	if (lastwarp$ == "")
 		message strcharinfo(0),"You haven't warped anywhere yet.";
@@ -140,7 +140,7 @@ function Restrict {
 menu	"Prontera",T1, "Alberta",T2, "Aldebaran",T3, "Amatsu",T4, "Ayothaya",T5,
     	"Brasilis",T6, "Comodo",T7, "Dewata",T8, "Eclage",T9, "Einbech",T10,
 		"Einbroch",T11, "El Dicastes",T12, "Geffen",T13, "Hugel",T14, "Ice Castle",T15,
-		"Izlude",T16, "Jawaii",T17, "Juno",T18, "Kunlun",T19, "Lasagna",T20,
+		"Izlude",T16, "Jawaii",T17, "Yuno",T18, "Kunlun",T19, "Lasagna",T20,
 		"Lighthalzen",T21, "Luoyang",T22, "Lutie",T23, "Malangdo",T24, "Malaya",T25,
 		"Manuk",T26, "Midgarts Expedition Camp",T27, "Mora",T28, "Morocc",T29, "Moscovia",T30,
 		"Nameless Island (Day)",T31, "Nameless Island (Night)",T32, "Niflheim",T33, "Payon",T34, "Rachel",T35,
@@ -214,7 +214,7 @@ menu	"Amatsu Fields",F1, "Ayothaya Fields",F2, "Bifrost Fields", F3,
     	"Brasilis Fields",F4, "Comodo Fields",F5, "Dewata Fields",F6,
     	"Eclage Fields",F7, "Einbroch Fields",F8, "El Dicastes Fields",F9,
     	"Frozen Scale Fields",F10, "Geffen Fields",F11, "Grey Wolf Forest",F12,
-		"Hugel Fields",F13, "Juno Fields",F14, "Kiwawa Desert",F15,
+		"Hugel Fields",F13, "Yuno Fields",F14, "Kiwawa Desert",F15,
 		"Kunlun Fields",F16, "Lasagna Fields",F17, "Lighthalzen Fields",F18,
 		"Luoyang Field",F19, "Lutie Field",F20, "Malaya Fields",F21,
 		"Manuk Fields",F22, "Mjolnir Fields",F23, "Moscovia Fields",F24,
@@ -261,7 +261,7 @@ F13: Restrict("Pre-RE",3,7);
 	 Disp("Hugel Field",1,7); Pick("hu_fild");
 F14: Restrict("Pre-RE",5,10);
 	 setarray @c[2],189,224,192,207,221,157,226,199,223,177,187,232,231,174,196,203,183,214,200,124,195,226,210,304;
-	 Disp("Juno Field",1,12); Pick("yuno_fild");
+	 Disp("Yuno Field",1,12); Pick("yuno_fild");
 F15: Restrict("RE");
 	 setarray @c[2],38,246,31,207;
 	 Disp("Kiwawa Desert",1,2); Pick("","rockrdg1","rockrdg2");
@@ -646,7 +646,7 @@ OnNaviGenerate:
 	naviregisterwarp("Warper > Hugel", "hugel",96,145);
 	naviregisterwarp("Warper > Izlude", "izlude",128,(checkre(3)?146:114));
 	naviregisterwarp("Warper > Jawaii", "jawaii",251,132);
-	naviregisterwarp("Warper > Juno", "yuno",157,51);
+	naviregisterwarp("Warper > Yuno", "yuno",157,51);
 	naviregisterwarp("Warper > Kunlun", "gonryun",160,120);
 	naviregisterwarp("Warper > Lighthalzen", "lighthalzen",158,92);
 	naviregisterwarp("Warper > Luoyang", "louyang",217,100);
@@ -936,20 +936,20 @@ OnNaviGenerate:
 		}
 	}
 
-	naviregisterwarp("Warper > Juno Field 1", "yuno_fild01", 189, 224);
+	naviregisterwarp("Warper > Yuno Field 1", "yuno_fild01", 189, 224);
 	if (!.OnlyFirstFld) {
-		naviregisterwarp("Warper > Juno Field 2", "yuno_fild02", 192, 207);
-		naviregisterwarp("Warper > Juno Field 3", "yuno_fild03", 221, 157);
-		naviregisterwarp("Warper > Juno Field 4", "yuno_fild04", 226, 199);
-		naviregisterwarp("Warper > Juno Field 6", "yuno_fild06", 187, 232);
-		naviregisterwarp("Warper > Juno Field 7", "yuno_fild07", 231, 174);
-		naviregisterwarp("Warper > Juno Field 8", "yuno_fild08", 196, 203);
-		naviregisterwarp("Warper > Juno Field 9", "yuno_fild09", 183, 214);
-		naviregisterwarp("Warper > Juno Field 11", "yuno_fild11", 195, 226);
-		naviregisterwarp("Warper > Juno Field 12", "yuno_fild12", 210, 304);
+		naviregisterwarp("Warper > Yuno Field 2", "yuno_fild02", 192, 207);
+		naviregisterwarp("Warper > Yuno Field 3", "yuno_fild03", 221, 157);
+		naviregisterwarp("Warper > Yuno Field 4", "yuno_fild04", 226, 199);
+		naviregisterwarp("Warper > Yuno Field 6", "yuno_fild06", 187, 232);
+		naviregisterwarp("Warper > Yuno Field 7", "yuno_fild07", 231, 174);
+		naviregisterwarp("Warper > Yuno Field 8", "yuno_fild08", 196, 203);
+		naviregisterwarp("Warper > Yuno Field 9", "yuno_fild09", 183, 214);
+		naviregisterwarp("Warper > Yuno Field 11", "yuno_fild11", 195, 226);
+		naviregisterwarp("Warper > Yuno Field 12", "yuno_fild12", 210, 304);
 		if (!checkre(0)) {
-			naviregisterwarp("Warper > Juno Field 5", "yuno_fild05", 223, 177);
-			naviregisterwarp("Warper > Juno Field 10", "yuno_fild10", 200, 124);
+			naviregisterwarp("Warper > Yuno Field 5", "yuno_fild05", 223, 177);
+			naviregisterwarp("Warper > Yuno Field 10", "yuno_fild10", 200, 124);
 		}
 	}
 
