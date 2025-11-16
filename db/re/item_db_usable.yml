@@ -1078,7 +1078,7 @@ Body:
     Name: Fly Wing
     Type: DelayConsume
     Buy: 250
-    Weight: 50
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -1088,7 +1088,7 @@ Body:
     Name: Butterfly Wing
     Type: DelayConsume
     Buy: 1000
-    Weight: 50
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
