@@ -1,0 +1,9 @@
+// Server Communication username and password.
+userid: dorian
+passwd: G9BmrMPxqVCuaFw
+
+// Character Server IP
+char_ip: 192.168.1.181
+
+// Map Server IP
+map_ip: 192.168.1.181
