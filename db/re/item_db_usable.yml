@@ -101,7 +101,7 @@ Body:
     Name: Red Potion
     Type: Healing
     Buy: 10
-    Weight: 70
+    Weight: 10
     Script: |
       itemheal rand(45,65),0;
   - Id: 502
@@ -109,7 +109,7 @@ Body:
     Name: Orange Potion
     Type: Healing
     Buy: 50
-    Weight: 100
+    Weight: 10
     Script: |
       itemheal rand(105,145),0;
   - Id: 503
@@ -117,7 +117,7 @@ Body:
     Name: Yellow Potion
     Type: Healing
     Buy: 180
-    Weight: 130
+    Weight: 10
     Script: |
       itemheal rand(175,235),0;
   - Id: 504
@@ -125,7 +125,7 @@ Body:
     Name: White Potion
     Type: Healing
     Buy: 1200
-    Weight: 150
+    Weight: 10
     Script: |
       itemheal rand(325,405),0;
   - Id: 505
@@ -133,7 +133,7 @@ Body:
     Name: Blue Potion
     Type: Healing
     Buy: 5000
-    Weight: 150
+    Weight: 10
     Script: |
       itemheal 0,rand(40,60);
   - Id: 506
@@ -141,7 +141,7 @@ Body:
     Name: Green Potion
     Type: Healing
     Buy: 40
-    Weight: 70
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -518,7 +518,7 @@ Body:
     Name: Condensed Red Potion
     Type: Healing
     Buy: 150
-    Weight: 20
+    Weight: 10
     Script: |
       itemheal rand(45,65),0;
   - Id: 546
@@ -526,7 +526,7 @@ Body:
     Name: Condensed Yellow Potion
     Type: Healing
     Buy: 600
-    Weight: 30
+    Weight: 10
     Script: |
       itemheal rand(175,235),0;
   - Id: 547
@@ -534,7 +534,7 @@ Body:
     Name: Condensed White Potion
     Type: Healing
     Buy: 1650
-    Weight: 50
+    Weight: 10
     Trade:
       NoSell: true
     Script: |
@@ -1579,7 +1579,7 @@ Body:
     Name: Concentration Potion
     Type: Usable
     Buy: 1200
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -1589,7 +1589,7 @@ Body:
     Name: Awakening Potion
     Type: Usable
     Buy: 2200
-    Weight: 150
+    Weight: 10
     Jobs:
       Alchemist: true
       Archer: true
@@ -1626,7 +1626,7 @@ Body:
     Name: Berserk Potion
     Type: Usable
     Buy: 4500
-    Weight: 200
+    Weight: 10
     Jobs:
       Alchemist: true
       Blacksmith: true
@@ -1819,7 +1819,7 @@ Body:
     Name: Poison Bottle
     Type: Usable
     Buy: 5000
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -2968,7 +2968,7 @@ Body:
     AegisName: Siege_White_Potion
     Name: WoE White Potion
     Type: Healing
-    Weight: 100
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -2983,7 +2983,7 @@ Body:
     AegisName: Siege_Blue_Potion
     Name: WoE Blue Potion
     Type: Healing
-    Weight: 100
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3110,7 +3110,7 @@ Body:
     Name: Puri Potion
     Type: Healing
     Buy: 20
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -3119,7 +3119,7 @@ Body:
     AegisName: N_Blue_Potion
     Name: Blue Potion
     Type: Healing
-    Weight: 50
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3403,7 +3403,7 @@ Body:
     AegisName: Woe_Violet_Potion
     Name: Siege Purple Potion
     Type: Healing
-    Weight: 80
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -3412,7 +3412,7 @@ Body:
     AegisName: Woe_White_Potion
     Name: Siege White Potion
     Type: Healing
-    Weight: 80
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -3421,7 +3421,7 @@ Body:
     AegisName: Woe_Blue_Potion
     Name: Siege Blue Potion
     Type: Healing
-    Weight: 80
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -3502,14 +3502,14 @@ Body:
     AegisName: Red_Potion_RG
     Name: Red Potion RG
     Type: Healing
-    Weight: 40
+    Weight: 10
     Script: |
       itemheal 325,0;
   - Id: 11556
     AegisName: Blue_Potion_RG
     Name: RG Blue Potion
     Type: Healing
-    Weight: 90
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -3519,7 +3519,7 @@ Body:
     Name: TE White Potion
     Type: Healing
     Buy: 200
-    Weight: 300
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -3529,7 +3529,7 @@ Body:
     Name: TE White Slim Potion
     Type: Healing
     Buy: 275
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -3570,7 +3570,7 @@ Body:
     Name: White Potion
     Type: Healing
     Buy: 10
-    Weight: 150
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3585,7 +3585,7 @@ Body:
     AegisName: Yellow_Potion_B
     Name: "[Not For Sale] Yellow Potion"
     Type: Healing
-    Weight: 130
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3616,7 +3616,7 @@ Body:
     Name: Red Slim Potion
     Type: Healing
     Buy: 10
-    Weight: 20
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3631,7 +3631,7 @@ Body:
     AegisName: Orange_Potion_B
     Name: "[Not For Sale] Orange Potion"
     Type: Healing
-    Weight: 100
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3646,7 +3646,7 @@ Body:
     AegisName: Red_Potion_B
     Name: "[Not For Sale] Red Potion"
     Type: Healing
-    Weight: 70
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3662,7 +3662,7 @@ Body:
     Name: Green Potion
     Type: Healing
     Buy: 10
-    Weight: 70
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3680,7 +3680,7 @@ Body:
     AegisName: Blue_Potion_B
     Name: "[Not For Sale] Blue Potion"
     Type: Healing
-    Weight: 150
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3696,7 +3696,7 @@ Body:
     Name: White Slim Potion
     Type: Healing
     Buy: 10
-    Weight: 50
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -3712,7 +3712,7 @@ Body:
     Name: Yellow Slim Potion
     Type: Healing
     Buy: 10
-    Weight: 30
+    Weight: 10
     Trade:
       NoDrop: true
       NoTrade: true
@@ -4187,7 +4187,7 @@ Body:
     Name: Red Syrup
     Type: Healing
     Buy: 800
-    Weight: 70
+    Weight: 10
     EquipLevelMin: 60
     Delay:
       Duration: 1000
@@ -4198,7 +4198,7 @@ Body:
     Name: Yellow Syrup
     Type: Healing
     Buy: 1200
-    Weight: 100
+    Weight: 10
     EquipLevelMin: 60
     Delay:
       Duration: 1000
@@ -4209,7 +4209,7 @@ Body:
     Name: White Syrup
     Type: Healing
     Buy: 1500
-    Weight: 140
+    Weight: 10
     EquipLevelMin: 60
     Delay:
       Duration: 1000
@@ -4220,7 +4220,7 @@ Body:
     Name: Blue Syrup
     Type: Healing
     Buy: 7000
-    Weight: 100
+    Weight: 10
     EquipLevelMin: 60
     Delay:
       Duration: 10000
@@ -4746,7 +4746,7 @@ Body:
     Name: Speed Potion
     Type: Usable
     Buy: 2
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -4756,7 +4756,7 @@ Body:
     Name: Slow Potion
     Type: Usable
     Buy: 2
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -4895,7 +4895,7 @@ Body:
     Name: Box of Drowsiness
     Type: Usable
     Buy: 1000
-    Weight: 200
+    Weight: 10
     Flags:
       BuyingStore: true
     NoUse:
@@ -5982,7 +5982,7 @@ Body:
     Name: Lucky Potion
     Type: Healing
     Buy: 2
-    Weight: 100
+    Weight: 10
     Script: |
       /* sc_start SC_LUKFOOD,180000,15; */
   - Id: 12132
@@ -6660,7 +6660,7 @@ Body:
     Name: Mercenary Red Potion
     Type: Usable
     Buy: 500
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -6670,7 +6670,7 @@ Body:
     Name: Mercenary Blue Potion
     Type: Usable
     Buy: 1000
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -7395,7 +7395,7 @@ Body:
     Name: Mercenary Concentration Potion
     Type: Usable
     Buy: 800
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -7405,7 +7405,7 @@ Body:
     Name: Mercenary Awakening Potion
     Type: Usable
     Buy: 1500
-    Weight: 150
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -7415,7 +7415,7 @@ Body:
     Name: Mercenary Berserk Potion
     Type: Usable
     Buy: 3000
-    Weight: 200
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -8755,7 +8755,7 @@ Body:
     Name: Angeling Potion
     Type: DelayConsume
     Buy: 20
-    Weight: 100
+    Weight: 10
     Flags:
       BuyingStore: true
     NoUse:
@@ -9669,7 +9669,7 @@ Body:
     Name: HP Increase Potion (Small)
     Type: Usable
     Buy: 100
-    Weight: 20
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -9680,7 +9680,7 @@ Body:
     Name: HP Increase Potion (Medium)
     Type: Usable
     Buy: 100
-    Weight: 40
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -9691,7 +9691,7 @@ Body:
     Name: HP Increase Potion (Large)
     Type: Usable
     Buy: 100
-    Weight: 80
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -9702,7 +9702,7 @@ Body:
     Name: SP Increase Potion (Small)
     Type: Usable
     Buy: 100
-    Weight: 20
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -9713,7 +9713,7 @@ Body:
     Name: SP Increase Potion (Medium)
     Type: Usable
     Buy: 100
-    Weight: 40
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -9724,7 +9724,7 @@ Body:
     Name: SP Increase Potion (Large)
     Type: Usable
     Buy: 100
-    Weight: 80
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
@@ -9735,7 +9735,7 @@ Body:
     Name: Concentrated White Potion Z
     Type: Healing
     Buy: 10
-    Weight: 70
+    Weight: 10
     Flags:
       BuyingStore: true
     Script: |
