@@ -146,6 +146,7 @@ Thumbs.db
 # generated files
 generated
 
-/conf/import/char_conf.txt
-/conf/import/inter_conf.txt
-/conf/import/map_conf.txt
+conf/import/char_conf.txt
+conf/import/inter_conf.txt
+conf/import/map_conf.txt
+conf/char_athena.conf
