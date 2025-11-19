@@ -1583,7 +1583,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      sc_start SC_ASPDPOTION0,1800000,4;
+      sc_start SC_ASPDPOTION0,1800000,10;
   - Id: 656
     AegisName: Awakening_Potion
     Name: Awakening Potion
@@ -1620,7 +1620,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      sc_start SC_ASPDPOTION1,1800000,6;
+      sc_start SC_ASPDPOTION1,1800000,15;
   - Id: 657
     AegisName: Berserk_Potion
     Name: Berserk Potion
@@ -1646,7 +1646,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      sc_start SC_ASPDPOTION2,1800000,9;
+      sc_start SC_ASPDPOTION2,1800000,20;
   - Id: 658
     AegisName: Union_Of_Tribe
     Name: Union of Tribe

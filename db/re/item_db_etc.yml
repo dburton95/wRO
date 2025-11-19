@@ -25049,7 +25049,8 @@ Body:
     AegisName: Seed_Of_Life
     Name: Seed of Life
     Type: Etc
-    Buy: 60000
+    Buy: 2000
+    sell: 1000
     Weight: 10
     Flags:
       BuyingStore: true
