@@ -23355,6 +23355,7 @@ bool skill_produce_mix(map_session_data *sd, uint16 skill_id, t_itemid nameid, i
 		tmp_item.nameid = nameid;
 		tmp_item.amount = 1;
 		tmp_item.identify = 1;
+
 		if (equip) {
 			tmp_item.card[0] = CARD0_FORGE;
 			tmp_item.card[1] = ((sc*5)<<8)+ele;
