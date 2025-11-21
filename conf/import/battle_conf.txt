@@ -43,3 +43,30 @@ item_rate_card_boss: 10000
 item_rate_card_mvp: 10000
 item_drop_card_min: 1
 item_drop_card_max: 10000
+
+// Player Stat Adjustments
+
+// Maximum params/stats for each class. (str, agi, vit, int, dex, and luk)
+// 'max_parameter' for novice, non-trans, non-baby, and non-3rd classes
+// 'max_trans_parameter' for trans classes (non-3rd trans classes)
+// 'max_third_parameter' for 3rd classes (regular/non-trans) except baby 3rd clasess
+// 'max_third_trans_parameter' for 3rd trans classes
+// 'max_baby_parameter' for baby classes except baby 3rd classes
+// 'max_baby_third_parameter' for baby 3rd classes only
+// 'max_extended_parameter' for extended 2nd class (Kagerou/Oboro and Rebellion)
+// For mor specific/advanced option, see 'db/[pre-]re/job_params_db.txt'
+max_parameter: 99
+max_trans_parameter: 99
+max_third_parameter: 150
+max_third_trans_parameter: 150
+max_baby_parameter: 80
+max_baby_third_parameter: 130
+max_extended_parameter: 150
+max_summoner_parameter: 150
+max_fourth_parameter: 150
+
+max_aspd: 195
+max_third_aspd: 195
+max_extended_aspd: 195
+max_summoner_aspd: 195
+
