@@ -2389,7 +2389,7 @@ int32 status_base_amotion_pc(map_session_data* sd, struct status_data* status)
 		val -= 25 - 5 * pc_checkskill(sd, RK_DRAGONTRAINING);
 	aspd = ((int32)(temp_aspd + ((float)(status_calc_aspd(sd, &sd->sc, true) + val) * status->agi / 200)) - min(aspd, 200));
 	// Global ASPD Buff
-	aspd = aspd * 1.10f;
+	aspd = aspd * 1.05f;
 	return aspd;
 #else
 	if (job == nullptr)
