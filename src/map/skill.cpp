@@ -23355,6 +23355,21 @@ bool skill_produce_mix(map_session_data *sd, uint16 skill_id, t_itemid nameid, i
 		tmp_item.nameid = nameid;
 		tmp_item.amount = 1;
 		tmp_item.identify = 1;
+
+		// --- BEGIN PATCH: 25% boost to all player-crafted items ---
+		if (sd) {  // Only boost items crafted by a real player
+    			const float multiplier = 1.25f;
+
+    		// HP/SP/ATK potencies — adapt depending on your item fields
+    		status_data* status = status_get_status_data(*sd);
+    		tmp_item.heal        = (int)(tmp_item.heal        * multiplier);
+    		tmp_item.heal_per    = (int)(tmp_item.heal_per    * multiplier);
+    		tmp_item.spheal      = (int)(tmp_item.spheal      * multiplier);
+    		tmp_item.spheal_per  = (int)(tmp_item.spheal_per  * multiplier);
+    		tmp_item.atk         = (int)(tmp_item.atk         * multiplier);
+		}	
+		// --- END PATCH ---
+
 		if (equip) {
 			tmp_item.card[0] = CARD0_FORGE;
 			tmp_item.card[1] = ((sc*5)<<8)+ele;
